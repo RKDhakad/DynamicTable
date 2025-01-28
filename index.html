@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10x10 Table</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+
+<body>
+    <h1>10x10 Table</h1>
+    <div class="navbar">
+        <button onclick="exportTableToCSV()">Export to CSV</button>
+        <button onclick="toggleColumnPopup()">Hide/Unhide Columns</button>
+        <button onclick="toggleFreezePopup()">Freeze Columns</button>
+        <button onclick="unfreezeColumns()">Unfreeze Columns</button>
+    </div>
+    <table id="Data-Table">
+        <thead>
+            <tr>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+                <th>Col 4</th>
+                <th>Col 5</th>
+                <th>Col 6</th>
+                <th>Col 7</th>
+                <th>Col 8</th>
+                <th>Col 9</th>
+                <th>Col 10</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1 Col 1</td>
+                <td>Row 1 Col 2</td>
+                <td>Row 1 Col 3</td>
+                <td>Row 1 Col 4</td>
+                <td>Row 1 Col 5</td>
+                <td>Row 1 Col 6</td>
+                <td>Row 1 Col 7</td>
+                <td>Row 1 Col 8</td>
+                <td>Row 1 Col 9</td>
+                <td>Row 1 Col 10</td>
+            </tr>
+            <tr>
+                <td>Row 2 Col 1</td>
+                <td>Row 2 Col 2</td>
+                <td>Row 2 Col 3</td>
+                <td>Row 2 Col 4</td>
+                <td>Row 2 Col 5</td>
+                <td>Row 2 Col 6</td>
+                <td>Row 2 Col 7</td>
+                <td>Row 2 Col 8</td>
+                <td>Row 2 Col 9</td>
+                <td>Row 2 Col 10</td>
+            </tr>
+            <tr>
+                <td>Row 3 Col 1</td>
+                <td>Row 3 Col 2</td>
+                <td>Row 3 Col 3</td>
+                <td>Row 3 Col 4</td>
+                <td>Row 3 Col 5</td>
+                <td>Row 3 Col 6</td>
+                <td>Row 3 Col 7</td>
+                <td>Row 3 Col 8</td>
+                <td>Row 3 Col 9</td>
+                <td>Row 3 Col 10</td>
+            </tr>
+            <!-- Repeat for remaining rows -->
+        </tbody>
+    </table>
+
+    <!-- Popup for hiding/unhiding columns -->
+    <div class="popup" id="columnPopup">
+        <h3>Select Columns to Show/Hide</h3>
+        <div id="columnCheckboxes">
+            <!-- Checkboxes will be added dynamically -->
+        </div>
+        <button onclick="applyColumnVisibility()">Apply</button>
+        <button onclick="toggleColumnPopup()">Close</button>
+    </div>
+
+    <!-- Popup for freezing columns -->
+    <div class="popup" id="freezePopup">
+        <h3>Enter Number of Columns to Freeze</h3>
+        <input type="number" id="freezeCount" min="1" max="10" />
+        <button onclick="applyFreezeColumns()">Freeze</button>
+        <button onclick="toggleFreezePopup()">Close</button>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Link to external JS -->
+</body>
+
+</html>

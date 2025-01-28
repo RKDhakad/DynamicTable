@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 300px;
+}
+
+.popup h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.popup input[type="number"],
+.popup input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.popup input[type="number"]:focus,
+.popup input[type="text"]:focus {
+    border: 1px solid #007BFF;
+    background-color: #fff;
+}
+
+.popup button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+
+.popup button:active {
+    transform: scale(0.98);
+}
+
+#columnCheckboxes {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#columnCheckboxes input {
+    margin-right: 10px;
+}
+
+/* Styling for the input fields and checkboxes in the popup */
+.popup label {
+    font-size: 14px;
+    color: #333;
+}
+
+.popup .checkbox-container {
+    margin-bottom: 10px;
+}
+
+.popup .checkbox-container label {
+    font-size: 14px;
+    color: #333;
+}
+
+.popup .checkbox-container input {
+    margin-right: 10px;
+}
